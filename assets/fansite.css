@@ -6,8 +6,8 @@
 }
 
 body {
-    background: #edd8be;
-    background: linear-gradient(360deg, rgba(237, 216, 190, 1) 0%, rgba(227, 157, 184, 1) 100%, rgba(240, 127, 195, 1) 94%);
+background: #e6b38e;
+background: linear-gradient(180deg, rgba(230, 179, 142, 1) 0%, rgba(230, 142, 171, 1) 100%, rgba(235, 168, 145, 1) 52%);
     background-repeat: no-repeat;
     color: #333;
     line-height: 1.6;
@@ -16,12 +16,12 @@ body {
 header {
     display: flex;
     text-align: center;
-    border: 6px solid rgba(223, 128, 182, 0.89);
+    border: 6px solid rgba(223, 128, 182, 0.3);
     border-radius: 4px;
     border-style: ridge;
     border-left: none;
     border-right: none;
-
+    background-color: #e3a59a;
 }
 
 .logo {
@@ -37,10 +37,10 @@ h1>a {
 h1 {
   font-size: 60px;
   text-decoration: none;
-  background: -webkit-linear-gradient(#ffb68f, #d64198);
+  background: -webkit-linear-gradient(#eaa17a, #d73c96);
   -webkit-background-clip: text;
   background-clip: text;
-  text-shadow: 2px 2px 4px rgba(184, 56, 131, 0.3),
+  text-shadow: 2px 2px 4px rgba(184, 56, 131, 0.4),
   -2px -2px 4px rgba(219, 151, 114, 0.3);
   -webkit-text-fill-color: transparent;
     margin-bottom: 0px;
@@ -64,15 +64,17 @@ nav ul {
 }
 nav ul li a {
     text-decoration: none;
-    color: #6e3b53;
+    text-shadow: #6e3b53 1px 1px 2px;
+    color: #ffffff;
 }
 
 nav ul li a:visited {
-    color: #6e3b53;
+    color: #ffcfe4;
 }
 
 nav ul li a:hover {
     color: #d64198;
+    text-shadow: #6e3b53 2px 2px 4px;
 }
 .content {
     text-align: center;
@@ -81,8 +83,8 @@ nav ul li a:hover {
     background-size: 110%;
     background-position: top center;
     background-repeat:repeat;
-    border: 6px solid rgba(223, 128, 182, 0.89);
-    border-top: none;
+    border: 5px solid rgba(223, 128, 182, 0.7);
+    border-top: 5px solid rgba(223, 128, 182, 0.3);
     border-radius: 4px;
     border-style: ridge;
     padding: 24px 0;
@@ -143,8 +145,25 @@ nav ul li a:hover {
     padding: 0 0.4rem;
 }
 
-footer {
-    background-color: #f8f8f8;
+ footer {
+    margin: 0px;
+    padding: 0px;
+    background-color: #eb9595;
     padding: 1rem;
     text-align: center;
+    border-top: 3px solid #d2629dac;
+}
+.footer-text {
+    font-size: 30px;
+    color: white;
+    margin: 0px;
+}
+
+footer h2 {
+    font-size: 15px;
+}
+
+footer h2 a {
+    text-decoration: none;
+    color: rgb(194, 185, 185);
 }
