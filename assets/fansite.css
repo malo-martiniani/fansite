@@ -38,10 +38,8 @@ header {
     margin: 15px;
     margin-left: 27px;
 }
-
-/* Minimalist audio player styling */
 .audio-player {
-    width: 150px;
+    width: 100px;
     height: 34px;
     align-self: center;
     background: rgba(207, 169, 132, 0);
@@ -50,35 +48,7 @@ header {
     padding: 3px 6px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.06);
     font-size: 12px;
-    color: #6e3b53;
-}
-
-/* Reduce default control chrome on WebKit browsers */
-.audio-player::-webkit-media-controls-panel {
-    background: transparent;
-    padding: 0;
-    height: 28px;
-}
-.audio-player::-webkit-media-controls-play-button {
-    width: 20px;
-    height: 20px;
-}
-.audio-player::-webkit-media-controls-timeline {
-    height: 6px;
-    border-radius: 3px;
-}
-.audio-player::-webkit-media-controls-volume-slider {
-    width: 50px;
-    height: 10px;
-}
-.audio-player::-webkit-media-controls-current-time-display,
-.audio-player::-webkit-media-controls-time-remaining-display {
-    display: none;
-}
-
-/* Firefox accent and smaller sizing */
-.audio-player {
-    accent-color: rgba(214,65,152,0.9);
+    color: #6e3b5300;
 }
 
 h1>a {
@@ -307,4 +277,33 @@ footer h2 a {
     .photo-gallery {
         flex-direction: column;
     }
+}
+
+.content-about {
+    display: flex;
+    padding: 20px;
+}
+
+.content-description {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 60%;
+    border-right: 6px solid rgba(223, 128, 182, 0.3);
+    border-radius: 3px;
+    padding-right: 10px;;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 40%;
+}
+
+.contact-form label {
+    padding: 5px;
 }
