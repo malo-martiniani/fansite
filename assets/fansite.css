@@ -175,7 +175,6 @@ nav ul li a:hover {
     border-top: 3px solid #d2629dac;
 }
 
-    /* Gallery masonry-like layout: three columns, images cropped uniformly */
     .container {
         max-width: 1200px;
         margin: 0 auto;
@@ -237,10 +236,11 @@ footer h2 a {
 }
 
 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 1224px;
-    width: 90%;
-    margin: 0 auto;
-    padding: 40px 0px;
+    margin: 0px;
 }
 
 .gallery-title {
@@ -254,6 +254,24 @@ footer h2 a {
 .photo-gallery {
     display: flex;
     gap: 20px;
+}
+
+.gallery-video {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.gallery-video iframe {
+    /* border: 3px solid #d2629dac; */
+    border-radius: 8px;
+    width: 320px;
+    height: 190px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+    margin-bottom: 18px;
 }
 
 .column {
