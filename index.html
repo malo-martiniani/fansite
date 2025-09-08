@@ -7,6 +7,7 @@
     <title>Pokémon Fansite</title>
 </head>
 <body>
+    <a href="#main" class="skip-link">Aller au contenu principal</a>
     <header>
         <img class="logo" src="assets/img/logo.png" alt="Logo Pokémon" />
         <audio class="audio-player" controls loop>
@@ -16,14 +17,15 @@
         <h1><a href="index.html">Fansite Pokémon</a></h1>
         <nav>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html" aria-current="page">Accueil</a></li>
                 <li><a href="a-propos.html">A-propos</a></li>
                 <li><a href="gallery.html">Galerie</a></li>
             </ul>
         </nav>
         
     </header>
-    <section class="news content">
+    <main id="main">
+    <section class="news content" aria-label="Dernières actualités Pokémon">
         <h2 style="font-size: 32px;">Bienvenue sur le Fansite Pokémon!</h2>
         <p>Découvrez tout sur l'univers Pokémon, participez à des quizz et explorez notre galerie d'images.</p>
     
@@ -48,6 +50,7 @@
             <img class="news-article-image4" src="assets/img/Pokémon_Sleep_Logo.png" alt="Pokémon GO Kanto Event">
         </article>
     </section>
+    </main>
     <footer>
         <h1 class="footer-text"><a href="index.html">Fansite Pokémon</a></h1>
          <a href="https://github.com/malo-martiniani/fansite" target="_blank"><img src="assets/img/github.svg" width="40" height="40" alt="Github"></a>
