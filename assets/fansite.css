@@ -325,3 +325,25 @@ footer h2 a {
 .contact-form label {
     padding: 5px;
 }
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.socials-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .socials-logo img {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+        transition: transform 0.3s ease;
+    }
