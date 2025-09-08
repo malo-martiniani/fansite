@@ -76,7 +76,7 @@ nav {
 
 nav ul {
     font-size: 20px;
-    list-style: -webkit-radial-gradient(circle, #ffb68f, #d64198);
+    list-style: none;
     margin-left: 80px;
     margin-top: 10px;
     padding: 0;
@@ -211,15 +211,7 @@ nav ul li a:hover {
         box-shadow: 0 10px 20px rgba(0,0,0,0.18);
     }
 
-    @media (max-width: 900px) {
-        .photo-gallery .photo img { height: 180px; }
-    }
-
-    @media (max-width: 700px) {
-        .photo-gallery { display: block; }
-        .photo-gallery .column { width: 100%; }
-        .photo-gallery .photo img { height: 160px; }
-    }
+   
 .footer-text {
     font-size: 30px;
     color: white;
@@ -288,15 +280,6 @@ footer h2 a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
-    .news-article {
-        flex: 0 1 calc(100% - 1rem);
-    }
-    .photo-gallery {
-        flex-direction: column;
-    }
-}
-
 .content-about {
     display: flex;
     padding: 20px;
@@ -347,3 +330,108 @@ footer h2 a {
         margin: 0 10px;
         transition: transform 0.3s ease;
     }
+
+
+@media (max-width: 1100px) {
+    nav ul { gap: 50px; margin-left: 40px; }
+    .content { width: 90vw; }
+    .news { max-width: 1000px; }
+}
+
+@media (max-width: 992px) {
+    h1 { font-size: 50px; margin-left: 30px; }
+    nav ul { gap: 40px; }
+    .news-article { flex: 0 1 calc(50% - 1rem); max-width: 340px; }
+    .content-description { max-width: 58%; }
+    .contact-form { max-width: 42%; }
+}
+
+@media (max-width: 900px) {
+    .photo-gallery .photo img { height: 300px; }
+    .news { padding: .5rem 0; }
+    .news-article { aspect-ratio: auto; min-height: 300px; }
+}
+
+@media (max-width: 800px) {
+    header { flex-wrap: wrap; }
+    h1 { font-size: 46px; margin-left: 20px; margin-right: 20px; }
+    nav { margin-top: 20px; width: 100%; }
+    /* Nav: suppression des puces + recentrage */
+    nav ul { gap: 32px; margin-left: 0; justify-content: center; list-style: none; padding-left: 0; }
+    .logo { height: 70px; margin-left: 10px; }
+    .content-description { font-size: 17px; }
+}
+
+@media (max-width: 768px) {
+    header { flex-direction: column; align-items: center; }
+    h1 { margin: 10px 0 0 0; text-align: center; }
+    nav { margin-top: 15px; }
+    nav ul { gap: 26px; }
+    .news { max-width: 680px; }
+    .news-article { flex: 0 1 calc(50% - 1rem); }
+    .content-about { flex-direction: column; align-items: center; }
+    .content-description { max-width: 100%; border-right: none; padding-right: 0; }
+    .contact-form { max-width: 420px; width: 100%; }
+    .photo-gallery { gap: 16px; }
+    .photo-gallery .photo img { height: 240px; }
+    .gallery-video iframe { width: 100%; height: auto; }
+}
+
+@media (max-width: 680px) {
+    nav ul { gap: 20px; list-style: none; }
+    .news { max-width: 520px; }
+    .news-article { flex: 0 1 100%; max-width: 100%; }
+    .news-article h3 { font-size: 1rem; }
+    .news-article p { font-size: 0.9rem; }
+    .content { width: 94vw; }
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 42px; }
+    .logo { height: 64px; }
+    nav ul { justify-content: center; }
+    .photo-gallery { display: block; }
+    .photo-gallery .column { width: 100%; }
+    .photo-gallery .photo img { height: 200px; }
+    .gallery-title { font-size: 32px; }
+    .content-description { font-size: 16px; }
+}
+
+@media (max-width: 520px) {
+    h1 { font-size: 38px; }
+    nav ul { gap: 16px; list-style: none; }
+    .news { padding: .25rem 0; }
+    .news-article { padding: 0.7rem 0.75rem; }
+    .news-article p { padding: 0; }
+    .content { padding: 18px 0; }
+}
+
+@media (max-width: 460px) {
+    nav ul { flex-wrap: wrap; justify-content: center; list-style: none; }
+    nav ul li { flex: 0 1 45%; text-align: center; }
+    h1 { font-size: 34px; }
+    .logo { height: 58px; }
+    .news-article { min-height: 280px; }
+}
+
+@media (max-width: 420px) {
+    nav ul { flex-direction: column; align-items: center; gap: 12px; list-style: none; }
+    nav ul li { flex: 0 0 auto; width: 100%; }
+    nav ul li a { display: block; width: 100%; }
+}
+
+@media (max-width: 380px) {
+    h1 { font-size: 30px; }
+    nav ul li { flex: 0 1 48%; }
+    .news-article h3 { font-size: 0.95rem; }
+    .news-article p { font-size: 0.82rem; }
+    .content-description { font-size: 15px; }
+    .contact-form label { font-size: 0.8rem; }
+}
+
+@media (max-height: 420px) and (orientation: landscape) {
+    header { flex-direction: row; flex-wrap: wrap; }
+    h1 { font-size: 34px; }
+    nav ul { gap: 14px; }
+    .news-article { min-height: 240px; }
+}
